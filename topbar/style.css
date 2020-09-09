@@ -1,0 +1,69 @@
+.top-bar {
+  min-width: 1190px;
+  background-color: #fff;
+  box-shadow: 0px 5px 6px 0px #f6f6f6, 0px 2px 5px 0px rgba(0, 0, 0, 0.07);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.top-bar .top-container {
+  width: 1190px;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.top-bar .top-container .top-left {
+  display: flex;
+  align-items: center;
+}
+.top-bar .top-container .top-left .left-home {
+  font-size: 14px;
+  color: #0299FF;
+}
+.top-bar .top-container .top-left .left-phone {
+  color: #949494;
+}
+.top-bar .top-container .top-right {
+  display: flex;
+  justify-content: right;
+  color: #949494;
+}
+.top-bar .top-container .top-right .right-item {
+  position: relative;
+  cursor: pointer;
+}
+.top-bar .top-container .top-right .right-item + .right-item {
+  margin-left: 25px;
+}
+.top-bar .top-container .top-right .right-item a {
+  display: block;
+}
+.top-bar .top-container .top-right .right-item .icon-down {
+  font-size: 14px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.top-bar .top-container .top-right .right-item .hover-list {
+  display: none;
+  position: absolute;
+  top: 36px;
+  width: 100px;
+  padding: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+}
+.top-bar .top-container .top-right .right-item .hover-list .hover-item:hover {
+  color: #0299FF;
+}
+.top-bar .top-container .top-right .right-item:hover .icon-down {
+  transform: rotate(180deg);
+}
+.top-bar .top-container .top-right .right-item:hover .hover-list {
+  display: block;
+}
